@@ -1,0 +1,50 @@
+﻿@page "/formEstudiantes"
+@using Data;
+@using System.Net.Http;
+@using System.Net.Http.Json;
+@inject HttpClient Http;
+@inject NavigationManager NavigationManager;
+
+<h3>FormEstudiante</h3>
+
+<EditForm Model="estudiante">
+    <div class="form-group row mb-1">
+        <label class="col-sm-3">Nombre</label>
+        <div class="col-sm-9">
+            <InputText class="form-control" @bind-Value="@estudiante.Nombres"></InputText>
+        </div>
+    </div>
+
+    <div class="form-group row mb-1">
+        <label class="col-sm-3">Apellidos</label>
+        <div class="col-sm-9">
+            <InputText class="form-control" @bind-Value="@estudiante.Apellidos"></InputText>
+        </div>
+    </div>
+
+    <div class="form-group row mb-1">
+        <label class="col-sm-3">Correo</label>
+        <div class="col-sm-9">
+            <InputText class="form-control" @bind-Value="@estudiante.Correo"></InputText>
+        </div>
+    </div>
+
+    <div class="form-group row mb-1">
+        <div class="col-sm-9">
+            <button class="btn btn-primary" @onclick="Guardar">Guardar</button>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    Estudiante estudiante = new Estudiante();
+    public Respuesta respuesta = new Respuesta();
+    public string url = "/api/Estudiante";
+
+    private async Task Guardar()
+    {
+        var response = await Http.PostAsJsonAsync<Estudiante>(url,estudiante);
+        respuesta = response.Content.ReadFromJsonAsync<Respuesta>().Result;
+        NavigationManager.NavigateTo("estudiantes");
+    }
+}
