@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Pages/Estudiantes/EliminarEstudiante.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0dWRpYW50ZXNcRWxpbWluYXJFc3R1ZGlhbnRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Pages/Estudiantes/FormEstudiante.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0dWRpYW50ZXNcRm9ybUVzdHVkaWFudGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,6 +34,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Pages/Modales/ModalMensaje.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kYWxlc1xNb2RhbE1lbnNhamUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Pages/SesionesUsuarios/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VzaW9uZXNVc3Vhcmlvc1xMb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Shared/LayoutWithoutNavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExheW91dFdpdGhvdXROYXZNZW51LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Shared/SurveyPrompt.razor]

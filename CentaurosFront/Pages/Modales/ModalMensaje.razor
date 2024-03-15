@@ -1,0 +1,38 @@
+﻿@if (MostrarModal)
+{
+    <div class="modal" tabindex="-1" style="display:block">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Información</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @onclick=Ocultar></button>
+                </div>
+                <div class="modal-body">
+                    <p>@MensajeModal</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" @onclick=Ocultar>Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+
+    public bool MostrarModal = false;
+    public string MensajeModal = "";
+
+    public void Ocultar()
+    {
+        MostrarModal = false;
+        StateHasChanged();
+    }
+
+    public void Mostrar(string mensaje)
+    {
+        MensajeModal = mensaje; 
+        MostrarModal = true;
+        StateHasChanged();
+    }
+}

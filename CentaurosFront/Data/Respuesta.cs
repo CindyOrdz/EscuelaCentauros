@@ -1,14 +1,9 @@
 ﻿namespace CentaurosFront.Data
 {
-    public class Respuesta
+    public class Respuesta<T>
     {
         public int Exito { get; set; }
         public string Mensaje { get; set; }
-        public List<Estudiante> Data { get; set; }
-
-        public Respuesta()
-        {
-            Exito = 0;
-        }
+        public T Data { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I3bMfIWVMf7JbIc3u2cGPm9o8SFlN+2O2K13vBdFA1Q=",
+  "Hash": "EbF+GVYsd1GuxRyl2e2T9/3edD+2DupMqBUADmJDe84=",
   "Source": "CentaurosFront",
   "BasePath": "_content/CentaurosFront",
   "Mode": "Default",
@@ -255,12 +255,12 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\favicon.png",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\favicon.ico",
       "SourceId": "CentaurosFront",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
-      "RelativePath": "favicon.png",
+      "RelativePath": "favicon.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -269,7 +269,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.png"
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\logoCentauros.png",
+      "SourceId": "CentaurosFront",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "BasePath": "_content/CentaurosFront",
+      "RelativePath": "logoCentauros.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logoCentauros.png"
     }
   ]
 }

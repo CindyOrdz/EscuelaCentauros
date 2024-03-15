@@ -26,7 +26,7 @@ namespace CentaurosBackAPI.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Listar()
         {
-            Respuesta respuesta = new Respuesta();
+            Respuesta<List<Estudiante>> respuesta = new Respuesta<List<Estudiante>>();
 
             try
             {
@@ -40,7 +40,7 @@ namespace CentaurosBackAPI.Controllers
             }
             catch (Exception ex)
             {
-                respuesta.Mensaje = "Error al recuperar la lista de estudiantes: " + ex.Message;
+                respuesta.Mensaje = $"Error al recuperar la lista de estudiantes: {ex.Message}";
                 return StatusCode(500, respuesta);
             }
         }
@@ -50,7 +50,7 @@ namespace CentaurosBackAPI.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Buscar(uint Id)
         {
-            Respuesta respuesta = new Respuesta();
+            Respuesta<Estudiante> respuesta = new Respuesta<Estudiante>();
 
             try
             {
@@ -69,7 +69,7 @@ namespace CentaurosBackAPI.Controllers
             }
             catch (Exception ex)
             {
-                respuesta.Mensaje = "Error al recuperar la lista de estudiantes: " + ex.Message;
+                respuesta.Mensaje = $"Error al recuperar la lista de estudiantes: {ex.Message}";
                 return StatusCode(500, respuesta);
             }
         }
@@ -80,7 +80,7 @@ namespace CentaurosBackAPI.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Insertar(EstudianteDTO model)
         {
-            Respuesta respuesta = new Respuesta();
+            Respuesta<object> respuesta = new Respuesta<object>();
 
             try
             {
@@ -92,6 +92,7 @@ namespace CentaurosBackAPI.Controllers
                 }
 
                 Estudiante estudiante = new Estudiante();
+                estudiante.Cedula = model.Cedula;
                 estudiante.Nombres = model.Nombres;
                 estudiante.Apellidos = model.Apellidos;
                 estudiante.Correo = model.Correo;
@@ -106,7 +107,7 @@ namespace CentaurosBackAPI.Controllers
             }
             catch (Exception ex)
             {
-                respuesta.Mensaje = "Error al agregar el estudiante: " + ex.Message;
+                respuesta.Mensaje = $"Error al agregar el estudiante: {ex.Message}";
                 return StatusCode(500, respuesta);
             }
         }
@@ -118,7 +119,7 @@ namespace CentaurosBackAPI.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Editar(EstudianteDTO model)
         {
-            Respuesta respuesta = new Respuesta();
+            Respuesta<object> respuesta = new Respuesta<object>();
 
             try
             {
@@ -154,7 +155,7 @@ namespace CentaurosBackAPI.Controllers
             catch (Exception ex)
             {
                 // Maneja otras excepciones
-                respuesta.Mensaje = "Error al actualizar el estudiante: " + ex.Message;
+                respuesta.Mensaje = $"Error al actualizar el estudiante: {ex.Message}";
                 return StatusCode(500, respuesta);
             }
         }
@@ -165,7 +166,7 @@ namespace CentaurosBackAPI.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Borrar(uint Cedula)
         {
-            Respuesta respuesta = new Respuesta();
+            Respuesta<object> respuesta = new Respuesta<object>();
 
             try
             {
@@ -187,7 +188,7 @@ namespace CentaurosBackAPI.Controllers
             }
             catch (Exception ex)
             {
-                respuesta.Mensaje = "Error al borrar el estudiante: " + ex.Message;
+                respuesta.Mensaje = $"Error al borrar el estudiante: {ex.Message}";
                 return StatusCode(500, respuesta);
             }
         }

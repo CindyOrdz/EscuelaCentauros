@@ -6,6 +6,11 @@ D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug\net7.0\CentaurosFront.runtimeconfig.json
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug\net7.0\CentaurosFront.dll
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug\net7.0\CentaurosFront.pdb
+D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug\net7.0\System.Net.Http.Json.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug\net7.0\System.Text.Encodings.Web.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug\net7.0\System.Text.Json.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\CentaurosFront.csproj.AssemblyReference.cache
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\CentaurosFront.GeneratedMSBuildEditorConfig.editorconfig
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\CentaurosFront.AssemblyInfoInputs.cache
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\CentaurosFront.AssemblyInfo.cs
@@ -24,14 +29,9 @@ D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\scopedcss\bundle\CentaurosFront.styles.css
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\scopedcss\projectbundle\CentaurosFront.bundle.scp.css
+D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\CentaurosFront.csproj.CopyComplete
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\CentaurosFront.dll
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\refint\CentaurosFront.dll
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\CentaurosFront.pdb
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\CentaurosFront.genruntimeconfig.cache
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\ref\CentaurosFront.dll
-D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug\net7.0\System.Net.Http.Json.dll
-D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug\net7.0\System.Text.Encodings.Web.dll
-D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug\net7.0\System.Text.Json.dll
-D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
-D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\CentaurosFront.csproj.AssemblyReference.cache
-D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\CentaurosFront.csproj.CopyComplete

@@ -41,3 +41,11 @@ D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosBackAPI\obj\Deb
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosBackAPI\obj\Debug\net7.0\CentaurosBackAPI.pdb
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosBackAPI\obj\Debug\net7.0\CentaurosBackAPI.genruntimeconfig.cache
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosBackAPI\obj\Debug\net7.0\ref\CentaurosBackAPI.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosBackAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosBackAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosBackAPI\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosBackAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosBackAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosBackAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosBackAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosBackAPI\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

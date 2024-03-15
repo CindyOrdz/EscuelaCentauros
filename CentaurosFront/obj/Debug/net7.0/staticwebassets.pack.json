@@ -53,8 +53,12 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\favicon.png",
-      "PackagePath": "staticwebassets\\favicon.png"
+      "Id": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\logoCentauros.png",
+      "PackagePath": "staticwebassets\\logoCentauros.png"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.CentaurosFront.Microsoft.AspNetCore.StaticWebAssets.props",

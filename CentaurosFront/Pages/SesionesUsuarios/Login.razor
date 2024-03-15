@@ -1,0 +1,53 @@
+﻿@using Data;
+@using System.Net.Http;
+@using System.Net.Http.Json;
+@inject HttpClient Http;
+@inject NavigationManager NavigationManager;
+
+<div class="contenedor-login">
+    
+    <EditForm class="formulario" Model="usuario" OnValidSubmit="Ingresar">
+        <DataAnnotationsValidator />
+        <img src="/logoCentauros.png" alt="Logo de la empresa" class="logo">
+
+        <h1 class="titulo-login">Inicio de sesión</h1>
+        <div class="input-contenedor">
+            <i class="fas fa-envelope icon"></i>
+            <InputText class="input-login" placeholder="Correo" @bind-Value="@usuario.Correo" />
+            <ValidationMessage For="@(() => usuario.Correo)"></ValidationMessage>
+        </div>
+
+        <div class="input-contenedor">
+            <i class="fas fa-key icon"></i>
+            <InputText class="input-login" placeholder="Contraseña" @bind-Value="@usuario.Clave" />
+            <ValidationMessage For="@(() => usuario.Clave)"></ValidationMessage>
+        </div>
+        <button type="submit" name="BtnLogin" class="button">Ingresar</button>
+        
+    </EditForm>
+</div>
+
+<ModalMensaje @ref="modal" />
+
+@code {
+    private ModalMensaje modal = new ModalMensaje();
+    private Usuario usuario = new Usuario();
+    public Respuesta<object> respuesta = new Respuesta<object>();
+    public string url = "/api/Autenticacion/Validar";
+
+    private async Task Ingresar()
+    {
+        var response = await Http.PostAsJsonAsync<Usuario>(url, usuario);
+        respuesta = response.Content.ReadFromJsonAsync<Respuesta<object>>().Result;
+
+        if(respuesta.Exito == 1)
+        {
+            NavigationManager.NavigateTo("/estudiantes");
+        }
+        else
+        {
+            modal.Mostrar(respuesta.Mensaje);
+        }
+    }
+
+}

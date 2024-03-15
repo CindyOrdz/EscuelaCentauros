@@ -1,4 +1,6 @@
 ﻿@page "/formEstudiantes"
+@page "/formEstudiantes/{Id:int}"
+
 @using Data;
 @using System.Net.Http;
 @using System.Net.Http.Json;
@@ -7,11 +9,21 @@
 
 <h3>FormEstudiante</h3>
 
-<EditForm Model="estudiante">
+<EditForm Model="estudiante" OnValidSubmit="Guardar">
+    <DataAnnotationsValidator />
+    <div class="form-group row mb-1">
+        <label class="col-sm-3">Cedula</label>
+        <div class="col-sm-9">
+            <InputNumber class="form-control" @bind-Value="@estudiante.Cedula"></InputNumber>
+            <ValidationMessage For="@(() => estudiante.Cedula)"></ValidationMessage>
+        </div>
+    </div>
+
     <div class="form-group row mb-1">
         <label class="col-sm-3">Nombre</label>
         <div class="col-sm-9">
             <InputText class="form-control" @bind-Value="@estudiante.Nombres"></InputText>
+            <ValidationMessage For="@(() => estudiante.Nombres)"></ValidationMessage>
         </div>
     </div>
 
@@ -19,6 +31,7 @@
         <label class="col-sm-3">Apellidos</label>
         <div class="col-sm-9">
             <InputText class="form-control" @bind-Value="@estudiante.Apellidos"></InputText>
+            <ValidationMessage For="@(() => estudiante.Apellidos)"></ValidationMessage>
         </div>
     </div>
 
@@ -26,25 +39,50 @@
         <label class="col-sm-3">Correo</label>
         <div class="col-sm-9">
             <InputText class="form-control" @bind-Value="@estudiante.Correo"></InputText>
+            <ValidationMessage For="@(() => estudiante.Correo)"></ValidationMessage>
         </div>
     </div>
 
     <div class="form-group row mb-1">
         <div class="col-sm-9">
-            <button class="btn btn-primary" @onclick="Guardar">Guardar</button>
+            <button class="btn btn-primary" type="submit">Guardar</button>
         </div>
     </div>
 </EditForm>
 
 @code {
+
+    //NO DEBERIA MOSTRAR LA CEDULA CUANDO ES EDITAR
+    [Parameter]
+    public int Id{ get; set; }
+
     Estudiante estudiante = new Estudiante();
-    public Respuesta respuesta = new Respuesta();
+    public Respuesta<object> respuesta = new Respuesta<object>();
+    public Respuesta<Estudiante> respuestaEstudiante = new Respuesta<Estudiante>();
     public string url = "/api/Estudiante";
 
     private async Task Guardar()
     {
-        var response = await Http.PostAsJsonAsync<Estudiante>(url,estudiante);
-        respuesta = response.Content.ReadFromJsonAsync<Respuesta>().Result;
-        NavigationManager.NavigateTo("estudiantes");
+        if(Id != 0) //Editar
+        {
+            var response = await Http.PutAsJsonAsync<Estudiante>(url, estudiante);
+            respuesta = response.Content.ReadFromJsonAsync<Respuesta<object>>().Result;
+        }
+        else // Guardar nuevo
+        {
+            var response = await Http.PostAsJsonAsync<Estudiante>(url, estudiante);
+            respuesta = response.Content.ReadFromJsonAsync<Respuesta<object>>().Result;
+        }
+        NavigationManager.NavigateTo("/estudiantes");
     }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if(Id !=0)
+        {
+            respuestaEstudiante = await Http.GetFromJsonAsync<Respuesta<Estudiante>>(url+"/"+Id);
+            estudiante = respuestaEstudiante.Data;
+        }
+    }
+
 }

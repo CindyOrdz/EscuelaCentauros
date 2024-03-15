@@ -1,11 +1,12 @@
 using CentaurosBackAPI.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 var misReglasCORS = "MiCors";
-
-// Add services to the container.
 
 builder.Services.AddControllers();
 
@@ -15,6 +16,28 @@ builder.Services.AddDbContext<CentaurosContext>(options =>
     options.UseMySql(connectionString, Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.34-mysql"));
 });
 
+//CONFIGURACION JWT
+builder.Configuration.AddJsonFile("appsettings.json");
+var secretkey = builder.Configuration.GetSection("JwtSettings").GetSection("SecretKey").ToString();
+var keyBytes = Encoding.UTF8.GetBytes(secretkey);
+builder.Services.AddAuthentication(config =>
+{
+    config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(config =>
+{
+    config.RequireHttpsMetadata = true; //Si requiere HTTPS
+    config.SaveToken = true;
+    config.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(keyBytes),
+        ValidateIssuer = false,
+        ValidateAudience = false
+    };
+});
+
+//CONFIGURACION CORS
 builder.Services.AddCors(option =>
     option.AddPolicy(name: misReglasCORS,
         builder =>
@@ -38,9 +61,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors(misReglasCORS); //Llamado a la politica de CORS
+app.UseCors(misReglasCORS); //CORS
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication(); //JWT
 
 app.UseAuthorization();
 

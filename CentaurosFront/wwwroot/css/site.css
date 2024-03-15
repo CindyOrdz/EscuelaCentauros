@@ -66,3 +66,75 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+/*Estilos Login*/
+.titulo-login {
+    text-align: center;
+    font-size: 40px;
+    color: #1a2537;
+}
+
+.input-login {
+    font-size: 20px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+}
+
+    .input-login:focus {
+        outline: none;
+    }
+
+.input-contenedor {
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.button {
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #2B316F;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .button:hover {
+        background: #494D75;
+    }
+
+.contenedor-login {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 90vh; /* 100% del alto de la ventana */
+}
+
+.formulario {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    width: 90%; /* 90% del ancho del contenedor */
+    max-width: 500px; /* Máximo de 500px */
+}
+
+
+
+.logo {
+    max-width: 200px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-bottom: 20px; /* Espacio entre el logo y el formulario */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+    display: block; /* Para asegurar que el margin:auto funcione */
+}
+
+
