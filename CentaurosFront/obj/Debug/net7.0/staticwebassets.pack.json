@@ -61,6 +61,10 @@
       "PackagePath": "staticwebassets\\logoCentauros.png"
     },
     {
+      "Id": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\vigilancia.png",
+      "PackagePath": "staticwebassets\\vigilancia.png"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.CentaurosFront.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

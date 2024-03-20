@@ -1,0 +1,70 @@
+﻿@inject HttpClient Http;
+
+@if (MostrarModal)
+{
+    <div class="modal" tabindex="-1" >
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="title">Eliminar estudiante</h5>
+                    <button type="button" class="btn-close" aria-label="Close" @onclick=Ocultar></button>
+                </div>
+                <div class="modal-body">
+                    <p class="letraModal">¿Esta seguro que desea eliminar al estudiante @Estudiante.Nombres @Estudiante.Apellidos ?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" @onclick=Eliminar>Eliminar</button>
+                    <button type="button" class="btn btn-primary"  @onclick=Ocultar>Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<ModalMensaje @ref="modalMensaje" />
+
+@code {
+    [Parameter]
+    public EstudianteDTO Estudiante { get; set; }
+
+    [Parameter]
+    public EventCallback<bool> OnEliminado { get; set; }
+
+    public bool MostrarModal { get; set; }
+    public Respuesta<object> respuesta = new Respuesta<object>();
+    private ModalMensaje modalMensaje = new ModalMensaje();
+
+    public void Mostrar()
+    {
+        MostrarModal = true;
+        StateHasChanged();
+    }
+
+    public void Ocultar()
+    {
+        MostrarModal = false;
+        StateHasChanged();
+    }
+
+
+    private async Task Eliminar()
+    {
+        var response = await Http.DeleteAsync("/api/Estudiante/" + Estudiante.Cedula);
+        respuesta = response.Content.ReadFromJsonAsync<Respuesta<object>>().Result;
+        MostrarModal = false;
+
+        if (response.IsSuccessStatusCode)
+        {
+            await OnEliminado.InvokeAsync(true); // Indica que la eliminación fue exitosa
+        }
+        else
+        {
+            await OnEliminado.InvokeAsync(false); // Indica que la eliminación falló
+            modalMensaje.Mostrar(respuesta.Mensaje);
+        }
+        
+    }
+
+
+
+}

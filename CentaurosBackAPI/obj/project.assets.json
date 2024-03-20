@@ -631,6 +631,16 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "CentaurosData/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/CentaurosData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CentaurosData.dll": {}
+        }
       }
     }
   },
@@ -1777,10 +1787,16 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "CentaurosData/1.0.0": {
+      "type": "project",
+      "path": "../CentaurosData/CentaurosData.csproj",
+      "msbuildProject": "../CentaurosData/CentaurosData.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "CentaurosData >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.17",
       "Microsoft.AspNetCore.OpenApi >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.16",
@@ -1821,7 +1837,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosData\\CentaurosData.csproj": {
+              "projectPath": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosData\\CentaurosData.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

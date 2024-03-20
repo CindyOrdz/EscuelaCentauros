@@ -10,6 +10,8 @@ D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug\net7.0\System.Text.Encodings.Web.dll
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug\net7.0\System.Text.Json.dll
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug\net7.0\CentaurosData.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\bin\Debug\net7.0\CentaurosData.pdb
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\CentaurosFront.csproj.AssemblyReference.cache
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\CentaurosFront.GeneratedMSBuildEditorConfig.editorconfig
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\obj\Debug\net7.0\CentaurosFront.AssemblyInfoInputs.cache

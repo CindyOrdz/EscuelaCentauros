@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EbF+GVYsd1GuxRyl2e2T9/3edD+2DupMqBUADmJDe84=",
+  "Hash": "5sq78esfuRwaMh04YaNeT7uQsb1NgAoWXUvzYP/0Xco=",
   "Source": "CentaurosFront",
   "BasePath": "_content/CentaurosFront",
   "Mode": "Default",
@@ -287,6 +287,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\logoCentauros.png"
+    },
+    {
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\vigilancia.png",
+      "SourceId": "CentaurosFront",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "BasePath": "_content/CentaurosFront",
+      "RelativePath": "vigilancia.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\vigilancia.png"
     }
   ]
 }

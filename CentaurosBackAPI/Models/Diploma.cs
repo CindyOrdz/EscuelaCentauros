@@ -9,7 +9,7 @@ public partial class Diploma
 
     public uint IdCurso { get; set; }
 
-    public uint IdEstudiante { get; set; }
+    public string IdEstudiante { get; set; } = null!;
 
     public DateOnly Fecha { get; set; }
 

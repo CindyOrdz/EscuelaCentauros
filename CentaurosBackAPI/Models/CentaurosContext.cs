@@ -27,9 +27,8 @@ public partial class CentaurosContext : DbContext
 
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
-//    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-//        => optionsBuilder.UseMySql("server=localhost;database=centauros;uid=root;pwd=3651", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.34-mysql"));
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        => optionsBuilder.UseMySql("name=CentaurosDBContext", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.34-mysql"));
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -78,7 +77,9 @@ public partial class CentaurosContext : DbContext
             entity.Property(e => e.Ciudad).HasColumnName("ciudad");
             entity.Property(e => e.Fecha).HasColumnName("fecha");
             entity.Property(e => e.IdCurso).HasColumnName("idCurso");
-            entity.Property(e => e.IdEstudiante).HasColumnName("idEstudiante");
+            entity.Property(e => e.IdEstudiante)
+                .HasMaxLength(10)
+                .HasColumnName("idEstudiante");
             entity.Property(e => e.Nci).HasColumnName("NCI");
             entity.Property(e => e.Nro).HasColumnName("NRO");
 
@@ -106,7 +107,7 @@ public partial class CentaurosContext : DbContext
             entity.HasIndex(e => e.IdUsuario, "fk_idUsuario_estudiantes_idx");
 
             entity.Property(e => e.Cedula)
-                .ValueGeneratedNever()
+                .HasMaxLength(10)
                 .HasColumnName("cedula");
             entity.Property(e => e.Apellidos)
                 .HasMaxLength(50)

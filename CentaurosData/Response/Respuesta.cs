@@ -1,4 +1,4 @@
-﻿namespace CentaurosBackAPI.Models.Response
+﻿namespace CentaurosData.Response
 {
     public class Respuesta<T>
     {

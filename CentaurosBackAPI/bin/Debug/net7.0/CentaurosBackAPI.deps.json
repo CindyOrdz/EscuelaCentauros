@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "CentaurosBackAPI/1.0.0": {
         "dependencies": {
+          "CentaurosData": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.17",
           "Microsoft.AspNetCore.OpenApi": "7.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.16",
@@ -325,6 +326,11 @@
         "dependencies": {
           "System.Text.Encodings.Web": "7.0.0"
         }
+      },
+      "CentaurosData/1.0.0": {
+        "runtime": {
+          "CentaurosData.dll": {}
+        }
       }
     }
   },
@@ -599,6 +605,11 @@
       "sha512": "sha512-DaGSsVqKsn/ia6RG8frjwmJonfos0srquhw09TlT8KRw5I43E+4gs+/bZj4K0vShJ5H9imCuXupb4RmS+dBy3w==",
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
+    },
+    "CentaurosData/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

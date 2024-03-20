@@ -1,16 +1,18 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using CentaurosBackAPI.Models.Response;
 using CentaurosBackAPI.Models;
 using Microsoft.EntityFrameworkCore;
-using CentaurosBackAPI.Models.DTOS;
 using Microsoft.AspNetCore.Cors;
+using CentaurosData.DTOS;
+using CentaurosData.Response;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CentaurosBackAPI.Controllers
 {
     [EnableCors("ReglasCors")] //Habilita CORS establecidos en program
 
     [Route("api/[controller]")]
+    [Authorize] //Restrige el acceso a los endpoints de este controlador,espera token JWT
     [ApiController]
     public class EstudianteController : ControllerBase
     {
@@ -30,7 +32,7 @@ namespace CentaurosBackAPI.Controllers
 
             try
             {
-                var lst = await _context.Estudiantes.ToListAsync();
+                var lst = await _context.Estudiantes.OrderByDescending(e => e.Nombres).ToListAsync();
 
                 respuesta.Exito = 1;
                 respuesta.Mensaje = "Lista de estudiantes recuperada exitosamente";
@@ -48,31 +50,32 @@ namespace CentaurosBackAPI.Controllers
         [HttpGet("{Id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Buscar(uint Id)
+        public async Task<IActionResult> Buscar(string Id)
         {
-            Respuesta<Estudiante> respuesta = new Respuesta<Estudiante>();
+            Respuesta<List<Estudiante>> respuesta = new Respuesta<List<Estudiante>>(); // Cambia el tipo de respuesta
 
             try
             {
-                var lst = await _context.Estudiantes.FindAsync(Id);
-                if (lst == null)
+                var lst = await _context.Estudiantes.Where(e => e.Cedula == Id).ToListAsync(); 
+                if (lst == null || lst.Count == 0)
                 {
-                    respuesta.Mensaje = "Estudiante no encontrado";
+                    respuesta.Mensaje = "No se encontró un estudiante con ese número de cédula.";
                     return NotFound(respuesta);
                 }
 
                 respuesta.Exito = 1;
-                respuesta.Mensaje = "Estudiante recuperado exitosamente";
+                respuesta.Mensaje = "Estudiante recuperado exitosamente"; 
                 respuesta.Data = lst;
 
                 return Ok(respuesta);
             }
             catch (Exception ex)
             {
-                respuesta.Mensaje = $"Error al recuperar la lista de estudiantes: {ex.Message}";
+                respuesta.Mensaje = $"Error al buscar el estudiante: {ex.Message}";
                 return StatusCode(500, respuesta);
             }
         }
+
 
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -164,7 +167,7 @@ namespace CentaurosBackAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Borrar(uint Cedula)
+        public async Task<IActionResult> Borrar(string Cedula)
         {
             Respuesta<object> respuesta = new Respuesta<object>();
 

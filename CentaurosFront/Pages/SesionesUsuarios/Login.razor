@@ -1,8 +1,12 @@
-﻿@using Data;
-@using System.Net.Http;
-@using System.Net.Http.Json;
-@inject HttpClient Http;
+﻿@inject HttpClient Http;
 @inject NavigationManager NavigationManager;
+
+@if (!string.IsNullOrEmpty(errorMessage)) //Muesta error del catch
+{
+    <div class="alert alert-danger" role="alert">
+        @errorMessage
+    </div>
+}
 
 <div class="contenedor-login">
     
@@ -13,16 +17,17 @@
         <h1 class="titulo-login">Inicio de sesión</h1>
         <div class="input-contenedor">
             <i class="fas fa-envelope icon"></i>
-            <InputText class="input-login" placeholder="Correo" @bind-Value="@usuario.Correo" />
-            <ValidationMessage For="@(() => usuario.Correo)"></ValidationMessage>
+            <input type="email" class="input-login" placeholder="Correo" @bind="usuario.Correo" />
         </div>
+        <ValidationMessage For="@(() => usuario.Correo)"></ValidationMessage>
 
         <div class="input-contenedor">
             <i class="fas fa-key icon"></i>
-            <InputText class="input-login" placeholder="Contraseña" @bind-Value="@usuario.Clave" />
-            <ValidationMessage For="@(() => usuario.Clave)"></ValidationMessage>
+            <input type="password" class="input-login" placeholder="Contraseña" @bind="usuario.Clave" />
         </div>
-        <button type="submit" name="BtnLogin" class="button">Ingresar</button>
+        <ValidationMessage For="@(() => usuario.Clave)"></ValidationMessage>
+
+        <button type="submit" name="BtnLogin" class="buttonLogin mt-3">Ingresar</button>
         
     </EditForm>
 </div>
@@ -31,23 +36,32 @@
 
 @code {
     private ModalMensaje modal = new ModalMensaje();
-    private Usuario usuario = new Usuario();
+    private UsuarioDTO usuario = new UsuarioDTO();
     public Respuesta<object> respuesta = new Respuesta<object>();
     public string url = "/api/Autenticacion/Validar";
+    private string errorMessage = "";
 
     private async Task Ingresar()
     {
-        var response = await Http.PostAsJsonAsync<Usuario>(url, usuario);
-        respuesta = response.Content.ReadFromJsonAsync<Respuesta<object>>().Result;
+        try
+        {
+            var response = await Http.PostAsJsonAsync<UsuarioDTO>(url, usuario);
+            respuesta = await response.Content.ReadFromJsonAsync<Respuesta<object>>();
 
-        if(respuesta.Exito == 1)
-        {
-            NavigationManager.NavigateTo("/estudiantes");
+            if (respuesta.Exito == 1)
+            {
+                NavigationManager.NavigateTo("/ListadoEstudiantes");
+            }
+            else
+            {
+                modal.Mostrar(respuesta.Mensaje);
+            }
         }
-        else
+        catch (Exception ex)
         {
-            modal.Mostrar(respuesta.Mensaje);
+            errorMessage = $"Error al enviar la solicitud: {ex.Message}";
         }
     }
+
 
 }

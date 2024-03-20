@@ -1,57 +1,119 @@
-﻿@page "/estudiantes"
-@using Data;
-@using System.Net.Http;
-@using System.Net.Http.Json;
+﻿@page "/ListadoEstudiantes"
 @inject HttpClient Http;
 
-<h3>ListarEstudiantes</h3>
-
-@if (respuesta == null)
+@if (!string.IsNullOrEmpty(errorMessage)) //Muesta error del catch
 {
-    <p>Cargando...</p>
-}
-else
-{
-    <div class="row">
-        <div class="col-12 text-right">
-            <a href="formEstudiantes">Nuevo</a>
-        </div>
+    <div class="alert alert-danger" role="alert">
+        @errorMessage
     </div>
-
-    <table class="table">
-        <tr>
-            <th>Cedula</th>
-            <th>Nombres</th>
-            <th>Apellidos</th>
-            <th>Correo</th>
-            <th></th>
-            <th></th>
-        </tr>
-        @if (respuesta.Data != null)
-        {
-            @foreach (var item in respuesta.Data)
-            {
-                <tr>
-                    <td>@item.Cedula</td>
-                    <td>@item.Nombres</td>
-                    <td>@item.Apellidos</td>
-                    <td>@item.Correo</td>
-                    <td>
-                        <a href="/formEstudiantes/@item.Cedula">Editar</a>
-                    </td>
-                    <td>
-                        <a href="/eliminarEstudiantes/@item.Cedula">Eliminar</a>
-                    </td>
-                </tr>
-            }
-        }
-    </table>
 }
+
+<div class="container">
+    <h3 class="title">Estudiantes registrados</h3>
+    <div class="search-bar">
+        <input type="text" @bind="CedulaBusqueda" class="form-control" placeholder="Buscar estudiante por número de cédula...">
+        <button class="btn btn-primary" title="Buscar" @onclick="BuscarEstudiante"><i class="fas fa-search"></i></button>
+    </div>
+    @if (respuestaListado == null)
+    {
+        <p>Cargando...</p>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <div class="scroll-table">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Cédula</th>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (respuestaListado.Data != null)
+                        {
+                            @foreach (var item in respuestaListado.Data)
+                            {
+                                <tr>
+                                    <td>@item.Cedula</td>
+                                    <td>@item.Nombres @item.Apellidos</td>
+                                    <td>@item.Correo</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-action-listado" title="Editar" @onclick="() => MostrarModalEditar(item)"><i class="fas fa-edit"></i></button>
+                                        <button class="btn btn-danger btn-action-listado" title="Eliminar" @onclick="() => MostrarModalEliminar(item)"><i class="fas fa-trash-alt"></i></button>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+</div>
+
+
+<ModalBorrarEstudiante @ref="modalBorrar" Estudiante="estudianteListado" OnEliminado="HandleEliminado"></ModalBorrarEstudiante>
+<ModalEditarEstudiante @ref="modalEditar" Estudiante="estudianteListado" OnEditado="HandleEditado"></ModalEditarEstudiante>
 
 @code {
-    public string url = "/api/Estudiante";
-    public Respuesta<List<Estudiante>> respuesta;
+    private string url = "/api/Estudiante";
+    private Respuesta<List<EstudianteDTO>> respuestaListado;
+    private ModalBorrarEstudiante modalBorrar;
+    private ModalEditarEstudiante modalEditar;
+    public EstudianteDTO estudianteListado = new EstudianteDTO();
+    public Respuesta<EstudianteDTO> respuestaEstudiante = new Respuesta<EstudianteDTO>();
+    private string errorMessage = "";
+    private string CedulaBusqueda = "";
 
-    protected override async Task OnInitializedAsync() =>
-        respuesta = await Http.GetFromJsonAsync<Respuesta<List<Estudiante>>>(url);
+    protected override async Task OnInitializedAsync()
+    {
+        try { 
+            respuestaListado = await Http.GetFromJsonAsync<Respuesta<List<EstudianteDTO>>>(url); 
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error al enviar la solicitud: {ex.Message}";
+        }
+
+    }
+
+    private void MostrarModalEliminar(EstudianteDTO estudiante)
+    {
+        estudianteListado = estudiante;
+        modalBorrar.Mostrar();
+
+    }
+
+    private async Task HandleEliminado(bool exito)
+    {
+        if (exito)
+        {
+            respuestaListado = await Http.GetFromJsonAsync<Respuesta<List<EstudianteDTO>>>(url);
+        }
+
+    }
+
+    private void MostrarModalEditar(EstudianteDTO estudiante)
+    {
+        estudianteListado = estudiante;
+        modalEditar.Mostrar();
+
+    }
+
+    private async Task HandleEditado(bool exito)
+    {
+        if (exito)
+        {
+            respuestaListado = await Http.GetFromJsonAsync<Respuesta<List<EstudianteDTO>>>(url);
+        }
+
+    }
+
+    private async Task BuscarEstudiante()
+    {
+        respuestaListado = await Http.GetFromJsonAsync<Respuesta<List<EstudianteDTO>>>(url+"/"+CedulaBusqueda);
+    }
 }

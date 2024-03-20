@@ -5,9 +5,9 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using CentaurosBackAPI.Models;
-using CentaurosBackAPI.Models.DTOS;
 using Microsoft.EntityFrameworkCore;
-using CentaurosBackAPI.Models.Response;
+using CentaurosData.DTOS;
+using CentaurosData.Response;
 
 namespace CentaurosBackAPI.Controllers
 {
@@ -32,25 +32,41 @@ namespace CentaurosBackAPI.Controllers
 
             try
             {
+                // Validar entrada
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
                 // Buscar el usuario en la base de datos por correo electrónico
                 var usuarioDB = await _context.Usuarios.FirstOrDefaultAsync(e => e.Usuario1 == usuarioForm.Correo);
 
-                // Verificar si el usuario existe y si la contraseña coincide
-                if (usuarioDB != null && usuarioDB.Contraseña == usuarioForm.Clave)
+                // Verificar si el usuario existe
+                if (usuarioDB != null)
                 {
-                    // Generar el token JWT
-                    var token = GenerarTokenJWT(usuarioDB.Usuario1);
+                    // Verificar si la contraseña coincide
+                    if (usuarioDB.Contraseña == usuarioForm.Clave)
+                    {
+                        // Generar el token JWT
+                        var token = GenerarTokenJWT(usuarioDB.Usuario1);
 
-                    respuesta.Exito = 1;
-                    respuesta.Mensaje = "El usuario ha iniciado sesión exitosamente";
-                    respuesta.Data = token;
+                        respuesta.Exito = 1;
+                        respuesta.Mensaje = "El usuario ha iniciado sesión exitosamente";
+                        respuesta.Data = token;
 
-                    // Devolver el token JWT como respuesta
-                    return Ok(respuesta);
+                        // Devolver el token JWT como respuesta
+                        return Ok(respuesta);
+
+                    }
+                    else
+                    {
+                        respuesta.Mensaje = "Contraseña incorrecta, por favor intente nuevamente.";
+                        return Unauthorized(respuesta);
+                    }
                 }
                 else
                 {
-                    respuesta.Mensaje = "Credenciales inválidas";
+                    respuesta.Mensaje = "El usuario ingresado no se encuentra registrado.";
                     return Unauthorized(respuesta);
                 }
             }
@@ -60,6 +76,7 @@ namespace CentaurosBackAPI.Controllers
                 return StatusCode(500, respuesta);
             }
         }
+
 
         private string GenerarTokenJWT(string correo)
         {

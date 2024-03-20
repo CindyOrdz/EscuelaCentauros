@@ -5,7 +5,7 @@ namespace CentaurosBackAPI.Models;
 
 public partial class Estudiante
 {
-    public uint Cedula { get; set; }
+    public string Cedula { get; set; } = null!;
 
     public string Nombres { get; set; } = null!;
 

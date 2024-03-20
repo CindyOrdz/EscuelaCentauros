@@ -1,7 +1,10 @@
-﻿@page "/formEstudiantes"
+﻿@* PARA PRUEBAS, LUEGO BORRAR *@
+
+@page "/formEstudiantes"
 @page "/formEstudiantes/{Id:int}"
 
-@using Data;
+@using CentaurosData.Response;
+@using CentaurosData.DTOS;
 @using System.Net.Http;
 @using System.Net.Http.Json;
 @inject HttpClient Http;
@@ -56,31 +59,31 @@
     [Parameter]
     public int Id{ get; set; }
 
-    Estudiante estudiante = new Estudiante();
+    EstudianteDTO estudiante = new EstudianteDTO();
     public Respuesta<object> respuesta = new Respuesta<object>();
-    public Respuesta<Estudiante> respuestaEstudiante = new Respuesta<Estudiante>();
+    public Respuesta<EstudianteDTO> respuestaEstudiante = new Respuesta<EstudianteDTO>();
     public string url = "/api/Estudiante";
 
     private async Task Guardar()
     {
         if(Id != 0) //Editar
         {
-            var response = await Http.PutAsJsonAsync<Estudiante>(url, estudiante);
+            var response = await Http.PutAsJsonAsync<EstudianteDTO>(url, estudiante);
             respuesta = response.Content.ReadFromJsonAsync<Respuesta<object>>().Result;
         }
         else // Guardar nuevo
         {
-            var response = await Http.PostAsJsonAsync<Estudiante>(url, estudiante);
+            var response = await Http.PostAsJsonAsync<EstudianteDTO>(url, estudiante);
             respuesta = response.Content.ReadFromJsonAsync<Respuesta<object>>().Result;
         }
-        NavigationManager.NavigateTo("/estudiantes");
+        NavigationManager.NavigateTo("/ListadoEstudiantes");
     }
 
     protected override async Task OnInitializedAsync()
     {
         if(Id !=0)
         {
-            respuestaEstudiante = await Http.GetFromJsonAsync<Respuesta<Estudiante>>(url+"/"+Id);
+            respuestaEstudiante = await Http.GetFromJsonAsync<Respuesta<EstudianteDTO>>(url+"/"+Id);
             estudiante = respuestaEstudiante.Data;
         }
     }

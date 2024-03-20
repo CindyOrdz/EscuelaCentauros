@@ -1,11 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CentaurosFront.Data
+namespace CentaurosData.DTOS
 {
-    public class Estudiante
+    public class EstudianteDTO
     {
         [Required(ErrorMessage = "El campo cedula es obligatoria")]
-        public int Cedula { get; set; }
+        [StringLength(10, ErrorMessage = "El número de cédula debe tener como máximo 10 dígitos.")]
+        [RegularExpression("^[0-9]*$", ErrorMessage = "El número de cédula debe contener solo números.")]
+        public string Cedula { get; set; } = null!;
 
         [Required(ErrorMessage = "El campo nombres es obligatorio")]
         public string Nombres { get; set; } = null!;

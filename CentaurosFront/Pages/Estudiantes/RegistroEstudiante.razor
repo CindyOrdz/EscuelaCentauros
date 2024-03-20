@@ -1,0 +1,78 @@
+﻿@page "/RegistroEstudiante"
+@inject HttpClient Http;
+@inject NavigationManager NavigationManager;
+
+@if (!string.IsNullOrEmpty(errorMessage)) //Muesta error del catch
+{
+    <div class="alert alert-danger" role="alert">
+        @errorMessage
+    </div>
+}
+
+<div class="registration-container">
+    <div class="row">
+        <div class="col-md-8 py-3 px-3">
+            <h5 class="title px-3">Registrar Estudiante</h5>
+            <hr />
+            <div class="formRegistro-container">
+                <EditForm Model="estudiante" OnValidSubmit="Registrar">
+                    <div class="formRegistro-group">
+                        <label for="firstName">Nombres:</label>
+                        <input type="text" class="form-control" id="firstName" @bind="estudiante.Nombres" required>
+                    </div>
+                    <div class="formRegistro-group">
+                        <label for="lastName">Apellidos:</label>
+                        <input type="text" class="form-control" id="lastName" @bind="estudiante.Apellidos" required>
+                    </div>
+                    <div class="formRegistro-group">
+                        <label for="cedula">Cédula:</label>
+                        <input type="text" class="form-control" id="cedula" @bind="estudiante.Cedula" required>
+                    </div>
+                    <div class="formRegistro-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="email" @bind="estudiante.Correo" required>
+                    </div>
+                    <button type="submit" class="btnRegistro">Registrar</button>
+                </EditForm>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="/vigilancia.png" class="img-fluid image-container" alt="Imagen de Registro">
+        </div>
+    </div>
+</div>
+
+
+<ModalMensaje @ref="modal" />
+
+@code {
+    private string errorMessage = "";
+    EstudianteDTO estudiante = new EstudianteDTO();
+
+    private ModalMensaje modal = new ModalMensaje();
+    private Respuesta<object> respuesta = new Respuesta<object>();
+    private string url = "/api/Estudiante";
+
+    private async Task Registrar()
+    {
+        try
+        {
+            var response = await Http.PostAsJsonAsync<EstudianteDTO>(url, estudiante);
+            respuesta = response.Content.ReadFromJsonAsync<Respuesta<object>>().Result;
+
+            if (respuesta.Exito == 1)
+            {
+                modal.Mostrar(respuesta.Mensaje);
+            }
+            else
+            {
+                modal.Mostrar(respuesta.Mensaje);
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error al enviar la solicitud: {ex.Message}";
+        }
+    }
+}
+
