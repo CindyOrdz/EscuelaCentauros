@@ -162,8 +162,7 @@ a, .btn-link {
 }
 
 .formRegistro-container {
-    padding: 20px;
-    margin-top: 20px; 
+    padding: 15px;
 }
 
 .formRegistro-group {
@@ -186,7 +185,6 @@ a, .btn-link {
 .image-container {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     margin: 0; /* Elimina los márgenes */
     padding: 0; /* Elimina el relleno */
 }
@@ -216,15 +214,25 @@ a, .btn-link {
 
 
 /*Estilos Menu de navegacion*/
-.navMenu{
+.navMenu {
     background-image: linear-gradient(0deg, rgb(61, 103, 216),rgb(65, 80, 170),rgb(53, 69, 115));
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
 }
 
-.navMenu-image {
-    text-align: center;
+.contenedorDropdown {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
 }
 
-    .navMenu-image img {
-        max-width: 70%;
-        max-height: 70%;
-    }
+.custom-hr {
+    border: none;
+    height: 1px; 
+    background-color: white;
+}
+
+.dropdown-toggle::after {
+    border-top-color: white !important; 
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5sq78esfuRwaMh04YaNeT7uQsb1NgAoWXUvzYP/0Xco=",
+  "Hash": "le2uHDBTzj+HcMrUFrWco5kofQE44h/PXtcVThoX8Zg=",
   "Source": "CentaurosFront",
   "BasePath": "_content/CentaurosFront",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "CentaurosFront\\wwwroot",
       "Source": "CentaurosFront",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CentaurosFront.styles.css",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CentaurosFront.styles.css",
       "SourceId": "CentaurosFront",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "CentaurosFront.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CentaurosFront.styles.css"
+      "OriginalItemSpec": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CentaurosFront.styles.css"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CentaurosFront.bundle.scp.css",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CentaurosFront.bundle.scp.css",
       "SourceId": "CentaurosFront",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "CentaurosFront.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CentaurosFront.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CentaurosFront.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "CentaurosFront",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "CentaurosFront",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "CentaurosFront",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "CentaurosFront",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "CentaurosFront",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "CentaurosFront",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "CentaurosFront",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "CentaurosFront",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "CentaurosFront",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "CentaurosFront",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "CentaurosFront",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\css\\site.css",
       "SourceId": "CentaurosFront",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\favicon.ico",
       "SourceId": "CentaurosFront",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\logoCentauros.png",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\logoCentauros.png",
       "SourceId": "CentaurosFront",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "logoCentauros.png",
       "AssetKind": "All",
@@ -289,10 +289,44 @@
       "OriginalItemSpec": "wwwroot\\logoCentauros.png"
     },
     {
-      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\vigilancia.png",
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\nuevoEstudiante.png",
       "SourceId": "CentaurosFront",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\wwwroot\\",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
+      "BasePath": "_content/CentaurosFront",
+      "RelativePath": "nuevoEstudiante.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\nuevoEstudiante.png"
+    },
+    {
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\user.png",
+      "SourceId": "CentaurosFront",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
+      "BasePath": "_content/CentaurosFront",
+      "RelativePath": "user.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user.png"
+    },
+    {
+      "Identity": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\vigilancia.png",
+      "SourceId": "CentaurosFront",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\wwwroot\\",
       "BasePath": "_content/CentaurosFront",
       "RelativePath": "vigilancia.png",
       "AssetKind": "All",

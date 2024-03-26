@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZkSpVIez9AyVAo3AOUUklvxUY/gS4n7jN02Hrgizwjm+If3VndKUE6G1svju5EDqlmBaLtpkuthHRVKBMOqFZQ==",
+  "dgSpecHash": "zXSHS2mnl/2SD2P0WQsItGMCifnKuezgGTScemAWaHt3B/0QDIH99bNSKxjqJRRS3Sz+1RG2V+jJTiZQm+JJPQ==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosBackAPI\\CentaurosBackAPI.csproj",
+  "projectFilePath": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosBackAPI\\CentaurosBackAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lorena\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Lorena\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.17\\microsoft.aspnetcore.authentication.jwtbearer.7.0.17.nupkg.sha512",

@@ -9,3 +9,14 @@ D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosData\obj\Debug\
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosData\obj\Debug\net7.0\refint\CentaurosData.dll
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosData\obj\Debug\net7.0\CentaurosData.pdb
 D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosData\obj\Debug\net7.0\ref\CentaurosData.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentauros\EscuelaCentauros\CentaurosData\bin\Debug\net7.0\CentaurosData.deps.json
+D:\Documents\ProyectosVisualStudio\DiplomasCentauros\EscuelaCentauros\CentaurosData\bin\Debug\net7.0\CentaurosData.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentauros\EscuelaCentauros\CentaurosData\bin\Debug\net7.0\CentaurosData.pdb
+D:\Documents\ProyectosVisualStudio\DiplomasCentauros\EscuelaCentauros\CentaurosData\obj\Debug\net7.0\CentaurosData.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\ProyectosVisualStudio\DiplomasCentauros\EscuelaCentauros\CentaurosData\obj\Debug\net7.0\CentaurosData.AssemblyInfoInputs.cache
+D:\Documents\ProyectosVisualStudio\DiplomasCentauros\EscuelaCentauros\CentaurosData\obj\Debug\net7.0\CentaurosData.AssemblyInfo.cs
+D:\Documents\ProyectosVisualStudio\DiplomasCentauros\EscuelaCentauros\CentaurosData\obj\Debug\net7.0\CentaurosData.csproj.CoreCompileInputs.cache
+D:\Documents\ProyectosVisualStudio\DiplomasCentauros\EscuelaCentauros\CentaurosData\obj\Debug\net7.0\CentaurosData.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentauros\EscuelaCentauros\CentaurosData\obj\Debug\net7.0\refint\CentaurosData.dll
+D:\Documents\ProyectosVisualStudio\DiplomasCentauros\EscuelaCentauros\CentaurosData\obj\Debug\net7.0\CentaurosData.pdb
+D:\Documents\ProyectosVisualStudio\DiplomasCentauros\EscuelaCentauros\CentaurosData\obj\Debug\net7.0\ref\CentaurosData.dll

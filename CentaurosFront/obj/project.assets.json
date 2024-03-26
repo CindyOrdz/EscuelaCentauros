@@ -232,11 +232,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\CentaurosFront.csproj",
+      "projectUniqueName": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\CentaurosFront.csproj",
       "projectName": "CentaurosFront",
-      "projectPath": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\CentaurosFront.csproj",
+      "projectPath": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\CentaurosFront.csproj",
       "packagesPath": "C:\\Users\\Lorena\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\obj\\",
+      "outputPath": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -258,8 +258,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosData\\CentaurosData.csproj": {
-              "projectPath": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosData\\CentaurosData.csproj"
+            "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosData\\CentaurosData.csproj": {
+              "projectPath": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosData\\CentaurosData.csproj"
             }
           }
         }

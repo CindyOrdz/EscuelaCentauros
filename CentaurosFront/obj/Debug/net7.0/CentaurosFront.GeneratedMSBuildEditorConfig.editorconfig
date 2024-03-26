@@ -9,73 +9,73 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CentaurosFront
 build_property.RootNamespace = CentaurosFront
-build_property.ProjectDir = D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront\
+build_property.ProjectDir = D:\Documents\ProyectosVisualStudio\DiplomasCentauros\EscuelaCentauros\CentaurosFront\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Documents\ProyectosVisualStudio\DiplomasCentaurosWeb\CentaurosFront
+build_property.MSBuildProjectDirectory = D:\Documents\ProyectosVisualStudio\DiplomasCentauros\EscuelaCentauros\CentaurosFront
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/App.razor]
+[D:/Documents/ProyectosVisualStudio/DiplomasCentauros/EscuelaCentauros/CentaurosFront/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Pages/Estudiantes/FormEstudiante.razor]
+[D:/Documents/ProyectosVisualStudio/DiplomasCentauros/EscuelaCentauros/CentaurosFront/Pages/Estudiantes/FormEstudiante.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0dWRpYW50ZXNcRm9ybUVzdHVkaWFudGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Pages/Estudiantes/ListarEstudiantes.razor]
+[D:/Documents/ProyectosVisualStudio/DiplomasCentauros/EscuelaCentauros/CentaurosFront/Pages/Estudiantes/ListarEstudiantes.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0dWRpYW50ZXNcTGlzdGFyRXN0dWRpYW50ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Pages/Estudiantes/RegistroEstudiante.razor]
+[D:/Documents/ProyectosVisualStudio/DiplomasCentauros/EscuelaCentauros/CentaurosFront/Pages/Estudiantes/RegistroEstudiante.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0dWRpYW50ZXNcUmVnaXN0cm9Fc3R1ZGlhbnRlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Pages/Index.razor]
+[D:/Documents/ProyectosVisualStudio/DiplomasCentauros/EscuelaCentauros/CentaurosFront/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Pages/Modales/ModalBorrarEstudiante.razor]
+[D:/Documents/ProyectosVisualStudio/DiplomasCentauros/EscuelaCentauros/CentaurosFront/Pages/Modales/ModalBorrarEstudiante.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kYWxlc1xNb2RhbEJvcnJhckVzdHVkaWFudGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Pages/Modales/ModalEditarEstudiante.razor]
+[D:/Documents/ProyectosVisualStudio/DiplomasCentauros/EscuelaCentauros/CentaurosFront/Pages/Modales/ModalEditarEstudiante.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kYWxlc1xNb2RhbEVkaXRhckVzdHVkaWFudGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Pages/Modales/ModalMensaje.razor]
+[D:/Documents/ProyectosVisualStudio/DiplomasCentauros/EscuelaCentauros/CentaurosFront/Pages/Modales/ModalMensaje.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kYWxlc1xNb2RhbE1lbnNhamUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Pages/SesionesUsuarios/Login.razor]
+[D:/Documents/ProyectosVisualStudio/DiplomasCentauros/EscuelaCentauros/CentaurosFront/Pages/SesionesUsuarios/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VzaW9uZXNVc3Vhcmlvc1xMb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Shared/LayoutWithoutNavMenu.razor]
+[D:/Documents/ProyectosVisualStudio/DiplomasCentauros/EscuelaCentauros/CentaurosFront/Shared/LayoutWithoutNavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExheW91dFdpdGhvdXROYXZNZW51LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Shared/SurveyPrompt.razor]
+[D:/Documents/ProyectosVisualStudio/DiplomasCentauros/EscuelaCentauros/CentaurosFront/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/_Imports.razor]
+[D:/Documents/ProyectosVisualStudio/DiplomasCentauros/EscuelaCentauros/CentaurosFront/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Shared/MainLayout.razor]
+[D:/Documents/ProyectosVisualStudio/DiplomasCentauros/EscuelaCentauros/CentaurosFront/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-b18dxyb4na
 
-[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Shared/NavMenu.razor]
+[D:/Documents/ProyectosVisualStudio/DiplomasCentauros/EscuelaCentauros/CentaurosFront/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-dsc2yf3gwk
 
-[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Pages/Error.cshtml]
+[D:/Documents/ProyectosVisualStudio/DiplomasCentauros/EscuelaCentauros/CentaurosFront/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/ProyectosVisualStudio/DiplomasCentaurosWeb/CentaurosFront/Pages/_Host.cshtml]
+[D:/Documents/ProyectosVisualStudio/DiplomasCentauros/EscuelaCentauros/CentaurosFront/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

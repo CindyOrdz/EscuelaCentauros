@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hBNX454US0G1iH6YWF8BWrqObrko9S/vA7DTh0qI0CjjpLaY+EppvhJZgtlnHBBnZogqXScgCTmdUWVQp1kOcg==",
+  "dgSpecHash": "6NRnD7UIDcydq/WEzT87yyziZJeInlLmUqryLmxvjj+j9dPsmScOs8qAipZH5InWjaoys4ww/v2ga5txOmU/PQ==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentaurosWeb\\CentaurosFront\\CentaurosFront.csproj",
+  "projectFilePath": "D:\\Documents\\ProyectosVisualStudio\\DiplomasCentauros\\EscuelaCentauros\\CentaurosFront\\CentaurosFront.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lorena\\.nuget\\packages\\system.net.http.json\\8.0.0\\system.net.http.json.8.0.0.nupkg.sha512",
     "C:\\Users\\Lorena\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
